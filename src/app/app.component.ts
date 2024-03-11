@@ -8,11 +8,14 @@ import { Model, ToDoItem } from './model';
 })
 export class AppComponent {
  model = new Model();
-
+ isDispaly=false;
  getName(){
   return this.model.user;
  }
  getItems(){
+  if(this.isDispaly){
+    return this.model.items;
+  }
   return this.model.items.filter(item=> !item.action);
  }
 
