@@ -5,7 +5,7 @@ export class Model{
     constructor(){
         this.user='Alperen';
         this.items= [
-            new ToDoItem("Spor",false),
+            new ToDoItem("Spor",true),
             new ToDoItem("Sinema",false),
             new ToDoItem("Kahvaltı",false),
             new ToDoItem("Kitap Okumak",false),
